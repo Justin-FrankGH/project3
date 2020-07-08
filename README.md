@@ -34,14 +34,20 @@ Using the features deemed relevant from Tableau, Veohnti and Milton trained both
     2. The visualizations we created were only showing the correlation between price and a given feature. What they didn't tell us were the weights each feature had on price affect. This is to say, we could conclude which features were affecting price, but not which were affecting price the most.
     
 ### Machine Learning part 2 - Leo
->[xgboost_airbnb_ny.ipynb](https://github.com/Justin-FrankGH/project3/blob/master/xgboost_airbnb_ny.ipynb)
+>[xgboost_airbnb_ny.ipynb](https://github.com/Justin-FrankGH/project3/blob/master/jupyter_notebooks/xgboost_airbnb_ny.ipynb)
+
+To correct our approach, XGBoost was employed to gain the weights of each feature and more accurately train a model. Once done, the XGBoost model presented a 70% accuracy score, a far better result than the preceeding regression models. 
 
 ### Tableau part 2 - Tari, Araz
 >[2](https://public.tableau.com/profile/araz.ohanessian#!/vizhome/RoomType_15934540785170/ReviewScores?publish=yes) [3](https://public.tableau.com/profile/tariere#!/vizhome/AirBnB-Amentities/AmenitiesvsMedianPrice?publish=yes)
 
+Seeing the new weights and relevant features, Tari and Araz once again applied Tableau to the data and reconfirmed the relations of features to median price. The visuals show why or why not a feature had a relation to a given listing's price.
+
 ### Machine Learning part 3 - Veohnti, Milton
+
+To ensure that a 70% accuracy score was the most accurate model we could apply, Veohnti and Milton experimented with Neural Net Modeling. Using multiple layers and an SGD Optimizer, several accuracy tests were performed. The end results showed scores just shy of that of the XGBoost model. 
 
 ### Predict Prices	- Justin
 >[user_input.ipynb](https://github.com/Justin-FrankGH/project3/blob/master/jupyter_notebooks/user_input.ipynb)
 
-Working with the cleaned data provided by Leo, I created drop downs, fill-in fields, and other widgets (using the ipynb widgets library) that can be plugged into a user-interactive 'form'. Once all property details are filled in, the task was then to pull the input values, and plug them into the newly created machine learning model. Once the collected data was cleaned and adjusted into an XGBoost prediction-friendly format, 
+Working with the cleaned data provided by Leo, A new 
