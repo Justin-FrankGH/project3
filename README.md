@@ -20,11 +20,24 @@ The data we worked with came from an open data source [InsideAirbnb](http://insi
 
 Provided with a thorough New York AirBnB listing dataset, the first task was isolating the relevant data and cleaning it for our purposes. Using pandas and data exploration tools in Jupyter Notebook, Leo found Nan value data points, listings with zero availability, and features irrelevent to our process. Considering we were also going to compare price to location, all listings lacking an exact location were dropped. Employing dataframe cleaning measures, he was then able to transform the dataset into one that's cleaner, consistent, and easy to use. Finally, the newly cleaned data was exported as a CSV for application in all the following processes.
         
-### Tableau - Tari, Araz
-Explore the data in Tableau
-come up with some visualizations based on what we are seeing
-come up with some inputs into a machine learning model
-### Machine Learning - Veohnti ( Milton)
-Use inputs from Tableau to come up with a list of inputs to machine learning model(s)
+### Tableau part 1- Tari, Araz
+>Tableau Visualizations: [1](https://public.tableau.com/profile/tariere#!/vizhome/AirBnBFeatures-HypothesizedImpactfulFeatures/ZipCode) [2](https://public.tableau.com/profile/araz.ohanessian#!/vizhome/RoomType_15934540785170/ReviewScores?publish=yes) [3](https://public.tableau.com/profile/tariere#!/vizhome/AirBnB-Amentities/AmenitiesvsMedianPrice?publish=yes)
+
+Furthering the data exploration process, Tari and Araz created Tableau visualizations to ascertain which features showed a strong correlation with a listing's price. The items seen to show an impact on price were logged and then used to train the machine learning models, referenced below.
+
+### Machine Learning part 1 - Veohnti, Milton
+>[LINK HERE]()
+
+Using the features deemed relevant from Tableau, Veohnti and Milton trained both Ridge and SVR maching learning models. Unfortunately, however, the models returned dismal accuracy scores. While these models were ultimately unusable, we learned two things from the process:
+    1. Our feature selection was narrow and limited to our presupposed notion of what would impact price. With such an expansive dataset, it was important for us to explore the possibility of seemingly inconsequential features affecting price. 
+    2. The visualizations we created were only showing the correlation between price and a given feature. What they didn't tell us were the weights each feature had on price affect. This is to say, we could conclude which features were affecting price, but not which were affecting price the most.
+    
+### Machine Learning part 2 - Leo
+>[xgboost_airbnb_ny.ipynb](https://github.com/Justin-FrankGH/project3/blob/master/xgboost_airbnb_ny.ipynb)
+
+### Tableau part 2 - Tari, Araz
+
 ### Predict Prices	- Justin
-Create a form to take inputs and predict prices
+>[user_input.ipynb](https://github.com/Justin-FrankGH/project3/blob/master/jupyter_notebooks/user_input.ipynb)
+
+Working with the cleaned data provided by Leo, I created drop downs, fill-in fields, and other widgets (using the ipynb widgets library) that can be plugged into a user-interactive 'form'. Once all property details are filled in, the task was then to pull the input values, and plug them into the newly created machine learning model. Once the collected data was cleaned and adjusted into an XGBoost prediction-friendly format, 
