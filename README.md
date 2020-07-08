@@ -50,4 +50,4 @@ To ensure that a 70% accuracy score was the most accurate model we could apply, 
 ### Predict Prices	- Justin
 >[user_input.ipynb](https://github.com/Justin-FrankGH/project3/blob/master/jupyter_notebooks/user_input.ipynb)
 
-Working with the cleaned data provided by Leo, A new 
+Working with the cleaned data provided by Leo, Jupyter Notebook widgets were imported and used to create an interactive user input form. The input values were set to be live updating and could be pulled for use in a machine learning model prediction formula. After compiling the new input data, a function was defined to first aggregate and zip the data with their respective titles. Next, the data was logged, scaled using the predefined training data, and funneled through the XGBoost predict method. Finally, the output was produced and put through and inverse logarithm function. This resulted in the final predicted price for the user's listing. 
