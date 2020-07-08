@@ -11,10 +11,11 @@ Entering into the world of AirBnB as a prospective host can be tricky. With so m
 - Araz Ohanessian
 - Milton Dimas
 
+## The Data Source:
+The data we worked with came from an open data source [InsideAirbnb](http://insideairbnb.com/get-the-data.html).
+
 ## The Process:
     
-### Locating the Data Source:
-The data we worked with came from an open data source [InsideAirbnb](http://insideairbnb.com/get-the-data.html).
 ### Data Cleaning:
 >[listings_data_cleaning.ipynb](https://github.com/Justin-FrankGH/project3/blob/master/listings_data_cleaning.ipynb)
 
