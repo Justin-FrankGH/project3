@@ -21,7 +21,7 @@ The data we worked with came from an open data source [InsideAirbnb](http://insi
 Provided with a thorough New York AirBnB listing dataset, the first task was isolating the relevant data and cleaning it for our purposes. Using pandas and data exploration tools in Jupyter Notebook, Leo found Nan value data points, listings with zero availability, and features irrelevent to our process. Considering we were also going to compare price to location, all listings lacking an exact location were dropped. Employing dataframe cleaning measures, he was then able to transform the dataset into one that's cleaner, consistent, and easy to use. Finally, the newly cleaned data was exported as a CSV for application in all the following processes.
         
 ### Tableau part 1- Tari, Araz
->Tableau Visualizations: [1](https://public.tableau.com/profile/tariere#!/vizhome/AirBnBFeatures-HypothesizedImpactfulFeatures/ZipCode) [2](https://public.tableau.com/profile/araz.ohanessian#!/vizhome/RoomType_15934540785170/ReviewScores?publish=yes) [3](https://public.tableau.com/profile/tariere#!/vizhome/AirBnB-Amentities/AmenitiesvsMedianPrice?publish=yes)
+>Tableau Visualizations: [1](https://public.tableau.com/profile/tariere#!/vizhome/AirBnBFeatures-HypothesizedImpactfulFeatures/ZipCode) 
 
 Furthering the data exploration process, Tari and Araz created Tableau visualizations to ascertain which features showed a strong correlation with a listing's price. The items seen to show an impact on price were logged and then used to train the machine learning models, referenced below.
 
@@ -36,6 +36,9 @@ Using the features deemed relevant from Tableau, Veohnti and Milton trained both
 >[xgboost_airbnb_ny.ipynb](https://github.com/Justin-FrankGH/project3/blob/master/xgboost_airbnb_ny.ipynb)
 
 ### Tableau part 2 - Tari, Araz
+>[2](https://public.tableau.com/profile/araz.ohanessian#!/vizhome/RoomType_15934540785170/ReviewScores?publish=yes) [3](https://public.tableau.com/profile/tariere#!/vizhome/AirBnB-Amentities/AmenitiesvsMedianPrice?publish=yes)
+
+### Machine Learning part 3 - Veohnti, Milton
 
 ### Predict Prices	- Justin
 >[user_input.ipynb](https://github.com/Justin-FrankGH/project3/blob/master/jupyter_notebooks/user_input.ipynb)
