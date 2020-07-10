@@ -44,6 +44,7 @@ To correct our approach, XGBoost was employed to gain the weights of each featur
 Seeing the new weights and relevant features, Tari and Araz once again applied Tableau to the data and reconfirmed the relations of features to median price. The visuals show why or why not a feature had a relation to a given listing's price.
 
 ### Machine Learning part 3 - Veohnti, Milton
+>[neural_net_models.ipynb](https://github.com/Justin-FrankGH/project3/blob/master/jupyter_notebooks/neural_net_models.ipynb)
 
 To ensure that a 70% accuracy score was the most accurate model we could apply, Veohnti and Milton experimented with Neural Net Modeling. Using multiple layers and an SGD Optimizer, several accuracy tests were performed. The end results showed scores just shy of that of the XGBoost model. 
 
