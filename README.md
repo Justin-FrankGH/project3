@@ -27,7 +27,7 @@ Provided with a thorough New York AirBnB listing dataset, the first task was iso
 Furthering the data exploration process, Tari and Araz created Tableau visualizations to ascertain which features showed a strong correlation with a listing's price. The items seen to show an impact on price were logged and then used to train the machine learning models, referenced below.
 
 ### Machine Learning part 1 - Veohnti, Milton
->[LINK HERE]()
+>[initial_machine_learning_attempt.ipynb](https://github.com/Justin-FrankGH/project3/blob/master/jupyter_notebooks/initial_machine_learning_attempt.ipynb)
 
 Using the features deemed relevant from Tableau, Veohnti and Milton trained both Ridge and SVR maching learning models. Unfortunately, however, the models returned dismal accuracy scores. While these models were ultimately unusable, we learned two things from the process:
     1. Our feature selection was narrow and limited to our presupposed notion of what would impact price. With such an expansive dataset, it was important for us to explore the possibility of seemingly inconsequential features affecting price. 
