@@ -17,7 +17,7 @@ The data we worked with came from an open data source [InsideAirbnb](http://insi
 ## The Process:
     
 ### Data Cleaning:
->[listings_data_cleaning.ipynb](https://github.com/Justin-FrankGH/project3/blob/master/listings_data_cleaning.ipynb)
+>[listings_data_cleaning.ipynb](https://github.com/Justin-FrankGH/project3/blob/master/jupyter_notebooks/listings_data_cleaning.ipynb)
 
 Provided with a thorough New York AirBnB listing dataset, the first task was isolating the relevant data and cleaning it for our purposes. Using pandas and data exploration tools in Jupyter Notebook, Leo found Nan value data points, listings with zero availability, and features irrelevent to our process. Considering we were also going to compare price to location, all listings lacking an exact location were dropped. Employing dataframe cleaning measures, he was then able to transform the dataset into one that's cleaner, consistent, and easy to use. Finally, the newly cleaned data was exported as a CSV for application in all the following processes.
         
@@ -52,3 +52,6 @@ To ensure that a 70% accuracy score was the most accurate model we could apply, 
 >[user_input.ipynb](https://github.com/Justin-FrankGH/project3/blob/master/jupyter_notebooks/user_input.ipynb)
 
 Working with the cleaned data provided by Leo, Jupyter Notebook widgets were imported and used to create an interactive user input form. The input values were set to be live updating and could be pulled for use in a machine learning model prediction formula. After compiling the new input data, a function was defined to first aggregate and zip the data with their respective titles. Next, the data was logged, scaled using the predefined training data, and funneled through the XGBoost predict method. Finally, the output was produced and put through and inverse logarithm function. This resulted in the final predicted price for the user's listing. 
+
+## How to use:
+Run the data through the data cleaning notebook and it will generate a CSV title "listings.csv". Once created, you can run the xgboost_airbnb_ny.ipynb notebook which will automatically pull "listings.csv". This notebook will run further cleaning and transformations to set up the data for machine learning. Then, the notebook will proceed to perform analyses, provide visuals, and create the XGBoost machine learning model. Once completed, this will also export two new CSVs for use in the user_input.ipynb notebook. This notebook will finally create the input form for listing price prediction.
